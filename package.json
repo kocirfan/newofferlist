@@ -2,9 +2,9 @@
   "name": "offer-lista-app-latest",
   "private": true,
   "scripts": {
-   "build": "remix build",
-  "start": "remix-serve build",
   "dev": "remix dev",
+  "build": "remix build",
+  "start": "remix-serve build",
     "config:link": "shopify app config link",
     "generate": "shopify app generate",
     "deploy": "shopify app deploy",
