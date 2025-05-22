@@ -2,10 +2,10 @@
   "name": "offer-lista-app-latest",
   "private": true,
   "scripts": {
-  "dev": "remix dev",
-  "build": "prisma generate && remix build",
-  "postinstall": "patch-package",
-  "start": "remix-serve build",
+    "dev": "remix dev",
+    "build": "prisma generate && remix build",
+    "postinstall": "patch-package",
+    "start": "remix-serve build",
     "config:link": "shopify app config link",
     "generate": "shopify app generate",
     "deploy": "shopify app deploy",
@@ -50,6 +50,8 @@
     "@types/react-dom": "^18.2.14",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^10.0.1",
+    "patch-package": "^8.0.0",
+    "postinstall-postinstall": "^2.1.0",
     "prettier": "^3.2.4",
     "typescript": "^5.2.2",
     "vite": "^6.2.2"
