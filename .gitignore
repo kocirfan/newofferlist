@@ -2,6 +2,7 @@ node_modules
 .DS_Store
 
 /.cache
+/public/build/
 /public/_dev
 /app/public/build
 /prisma/dev.sqlite
