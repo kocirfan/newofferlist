@@ -1,0 +1,36 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "a0c632c3f9a8a18650e7dc814093c0e4"
+name = "offer-lista-app-latest"
+handle = "offer-lista-app-latest"
+application_url = "https://completing-employ-unauthorized-newman.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-04"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://completing-employ-unauthorized-newman.trycloudflare.com/auth/callback",
+  "https://completing-employ-unauthorized-newman.trycloudflare.com/auth/shopify/callback",
+  "https://completing-employ-unauthorized-newman.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
