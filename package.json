@@ -4,6 +4,7 @@
   "scripts": {
   "dev": "remix dev",
   "build": "prisma generate && remix build",
+  "postinstall": "patch-package",
   "start": "remix-serve build",
     "config:link": "shopify app config link",
     "generate": "shopify app generate",
